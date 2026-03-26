@@ -15,7 +15,15 @@ The purpose of the project is to build a deeper understanding of:
 - input/output redirections
 - error handling and cleanup in multi-process programs
 
-### Program Behavior
+<br>
+
+## Platform support
+
+This project is developed for Unix-like systems, primarily Linux. It uses Unix-oriented tooling and a Makefile-based build system, so it is generally not intended to run natively on Windows without adaptation. On Windows, the recommended way to build and run it is through WSL.
+
+<br>
+
+## Program Behavior
 
 The mandatory program behaves like this shell command:
 
@@ -97,6 +105,8 @@ The bonus version extends `pipex` with two additional features:
   ```
 
 The bonus source files are located in the `bonus/` folder.
+
+<br>
 
 ## Instructions
 
@@ -182,6 +192,8 @@ Equivalent shell behavior:
 << STOP cat | wc -c >> outfile
 ```
 
+<br>
+
 ## Project Structure
 
 ### Mandatory files
@@ -213,6 +225,3 @@ Located in the `bonus/` folder:
 - The mandatory part expects exactly 4 arguments after the executable name.
 - The bonus part accepts a variable number of commands.
 
-## Credits / References
-
-This project is inspired by standard Unix shell behavior and focuses on reproducing pipe and redirection mechanics using low-level system calls in C.
